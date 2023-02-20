@@ -1,0 +1,18 @@
+#Header{
+    background-color: inherit;
+    border:0;
+    border-bottom: 1px solid #F9CF1D;
+    width: 80%;
+    margin: 1rem auto;
+    padding:1rem;
+    text-align:center;
+    cursor: default;
+    
+}
+
+@keyframes rotate {
+    
+    to{
+        transform: rotate(180deg) ;
+    }
+}

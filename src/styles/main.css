@@ -1,0 +1,104 @@
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+    align-items: center;
+    padding:1rem;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+}
+
+
+
+.selectButton {
+    padding:1rem;
+    border-radius: 0.3rem;
+    border: 2px solid #7176D9;
+    color: #fff;
+    background-color: transparent; 
+}
+.timer{
+    display: flex;
+    position: relative;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 1rem;
+    align-self: center;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: default;
+
+}
+.timer button.select{
+    background-color: #7176D9;
+}
+#hour,#minutes,#seconds{
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    height: 7rem;
+    max-width: 8rem;
+    max-height: 8rem;
+    text-align: center;
+    padding:1rem;
+    transition: all 0.5s linear;
+    border-radius: 0.3rem;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0,0,0,0.4)) ;
+}
+#meridiem{
+    display: flex;
+    border: 2px solid #F9CF1D;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #F9CF1D;
+    transition: all 2s linear infinite;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0,0,0,0.4)) ;
+
+
+
+}
+
+#hour{
+    background: #FF1745;
+}
+#minutes{
+    background-color:#00C853;
+}
+#seconds{
+    background-color:#2196F3;
+}
+
+@keyframes handleMeridiemPm {
+    to{
+        transform: rotateY(180deg);
+        background: inherit;
+        border: none;
+        border-right: 5px solid #F9CF1D;
+    }
+}
+@keyframes handleMeridiemAm {
+    to{
+        transform: rotateY(180deg);
+        background-color: #F9CF1D;
+        border: 2px solid #F9CF1D;
+        border-right: 5px solid #F9CF1D;
+    }
+}
+
+
+#startButton{
+    padding:1rem;
+    color: #fff;
+    border:0;
+    border-bottom:3px solid #040DBF  ;
+    background-color:#7176D9  ;
+    width: 50%;
+    border-radius:0.3rem ;
+
+}
